@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Photoshop online</title>
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+	<script type="text/javascript" src="colorpicker.js"></script>
+    <script type="text/javascript" src="js/parameters.js"></script>
+</head>
+<body>
+    <div class="Toolbar" id="Parameters">
+        <img src="" alt="Add Size" onclick="addSize()">
+        <img src="" alt="Sub Size" onclick="subSize()">
+        <img src="" alt="Add Opacity" onclick="addOpacity()">
+        <img src="" alt="Sub Opacity" onclick="subOpacity()">
+        <img src="" alt="Copy" onclick="copy">
+        <img src="" alt="Paste" onclick="paste">
+    	<img src="" alt="Undo" onclick="undo">
+        <img src="" alt="Redo" onclick="redo">
+    </div>
+    <div class="Toolbar" id="Instruments">
+    	<img src="" alt="Brush" onclick="draw"><br>
+        <img src="" alt="Eraser" onclick="erase"><br>
+        <img src="" alt="Fill" onclick="fill"><br>
+        <img src="" alt="Figure" onclick="drawFigure"><br>
+        <img src="" alt="Front" onclick="changeColor(#000, this)"><br>
+        <img src="" alt="Back" onclick="changeColor(#fff, this)"><br>
+    </div>
+    <div id="WSpace">
+        <canvas id="WorkSpace" width=600 height=400></canvas>
+    </div>
+    <div class="Toolbar" id="Adjustments">
+    	<div id="Picker"></div>
+    	<div id="Slide"></div>
+    	<script type="text/javascript">
+    	    ColorPicker(
+    	    	document.getElementById('Slide'),
+    	    	document.getElementById('Picker'),
+    	    	function(hex, hvs, rgb) {
+    	    		changeColor(hex, this);
+    		});
+    	</script>
+        <div id="History">
+            History
+        </div>
+        <div id="Layers">
+            <img src="" alt="add" onclick="addLayer">
+        </div>
+    </div>
+</body>
+</html>
