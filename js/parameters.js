@@ -65,3 +65,27 @@ function stopDrawing() {
 	isDrawing = false;
 	step();
 }
+
+function fill() {
+	context.fillRect(0, 0, context.width, context.height);
+}
+
+function copy() {
+
+}
+
+function paste() {
+
+}
+
+function undo() {
+
+}
+
+function redo() {
+
+}
+
+function step() {
+	
+}
