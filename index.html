@@ -1,29 +1,29 @@
 <!doctype html>
 <html>
 <head>
-	<title>Photoshop online</title>
+	<title>WebPainter</title>
 	<link rel="stylesheet" type="text/css" href="css/ui.css">
 	<script type="text/javascript" src="js/colorpicker.js"></script>
     <script type="text/javascript" src="js/parameters.js"></script>
 </head>
 <body>
     <div class="Toolbar" id="Parameters">
-        <img src="" alt="Add Size" onclick="addSize()">
-        <img src="" alt="Sub Size" onclick="subSize()">
-        <img src="" alt="Add Opacity" onclick="addOpacity()">
-        <img src="" alt="Sub Opacity" onclick="subOpacity()">
-        <img src="" alt="Copy" onclick="copy">
-        <img src="" alt="Paste" onclick="paste">
-    	<img src="" alt="Undo" onclick="undo">
-        <img src="" alt="Redo" onclick="redo">
+        <img src="images/add-size.png" alt="Add Size" onclick="addSize()">
+        <img src="images/remove-size.png" alt="Sub Size" onclick="subSize()">
+        <img src="images/add-opacity.png" alt="Add Opacity" onclick="addOpacity()">
+        <img src="images/remove-opacity.png" alt="Sub Opacity" onclick="subOpacity()">
+        <img src="images/copy.png" alt="Copy" onclick="copy">
+        <img src="images/paste.png" alt="Paste" onclick="paste">
+    	<img src="images/undo.png" alt="Undo" onclick="undo">
+        <img src="images/redo.png" alt="Redo" onclick="redo">
     </div>
     <div class="Toolbar" id="Instruments">
-    	<img src="" alt="Brush" onclick="draw"><br>
-        <img src="" alt="Eraser" onclick="erase"><br>
-        <img src="" alt="Fill" onclick="fill"><br>
-        <img src="" alt="Figure" onclick="drawFigure"><br>
-        <img src="" alt="Front" onclick="changeColor(#000, this)"><br>
-        <img src="" alt="Back" onclick="changeColor(#fff, this)"><br>
+    	<img src="images/brush.png" alt="Brush" onclick="draw"><br>
+        <img src="images/eraser.png" alt="Eraser" onclick="erase"><br>
+        <img src="images/fill.png" alt="Fill" onclick="fill"><br>
+        <img src="images/figure.png" alt="Figure" onclick="drawFigure"><br>
+        <img src="images/front-color.png" alt="Front" onclick="changeColor(#000, this)"><br>
+        <img src="images/back-color.png" alt="Back" onclick="changeColor(#fff, this)"><br>
     </div>
     <div id="WSpace">
         <canvas id="WorkSpace" width=600 height=400></canvas>
